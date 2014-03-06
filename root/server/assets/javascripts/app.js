@@ -1,8 +1,8 @@
-var meanApp  = angular.module('meanApp', [
-  'meanRoutes',
-  'meanControllers',
-  'meanServices'
+var {%= name %}App  = angular.module('{%= name %}App', [
+  '{%= name %}Routes',
+  '{%= name %}Controllers',
+  '{%= name %}Services'
 ]);
-var meanRoutes      = angular.module('meanRoutes'     , ['ngRoute'   ]);
-var meanControllers = angular.module('meanControllers', [            ]);
-var meanServices    = angular.module('meanServices'   , ['ngResource']);
+var {%= name %}Routes      = angular.module('{%= name %}{%= name %}Routes'     , ['ngRoute'   ]);
+var {%= name %}Controllers = angular.module('{%= name %}Controllers', [            ]);
+var {%= name %}Services    = angular.module('{%= name %}Services'   , ['ngResource']);

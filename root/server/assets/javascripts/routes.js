@@ -1,3 +1,3 @@
-meanRoutes.config(['$routeProvider', function($routeProvider) {
+{%= name %}Routes.config(['$routeProvider', function($routeProvider) {
 
 }]);
