@@ -13,7 +13,7 @@ gulp.task('styles', function() {
   gulp.src('./assets/stylesheets/**/*.less')
       .pipe(less({compress: true}))
       .pipe(autoprefixer())
-      .pipe(gulp.dest('./public/stylesheets'));
+      .pipe(gulp.dest('./public/assets/stylesheets'));
 });
 
 gulp.task('scripts', function() {
@@ -22,7 +22,7 @@ gulp.task('scripts', function() {
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./public/javascripts'))
+    .pipe(gulp.dest('./public/assets/javascripts'))
 });
 
 gulp.task('nodemon', function () {
